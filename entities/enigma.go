@@ -1,8 +1,6 @@
 package entities
 
-import (
-	"strings"
-)
+import "strings"
 
 type Enigma struct {
 	Rotors    []*Rotor
@@ -36,7 +34,9 @@ func (e *Enigma) EncodeMessage(message string) string {
 		if rotor2.Position == rotor2.Notch {
 			rotor2.Rotate()
 			rotor3.Rotate()
-		} else if rotor1.Position == rotor1.Notch {
+		}
+		
+		if rotor1.Position == rotor1.Notch {
 			rotor2.Rotate()
 		}
 	
