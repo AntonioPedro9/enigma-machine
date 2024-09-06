@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strings"
 
 	"github.com/AntonioPedro9/enigma-machine/entities"
 )
@@ -20,11 +19,7 @@ var (
 
 func main() {
 	enigma := entities.NewEnigma([]*entities.Rotor{rotorI, rotorII, rotorIII}, reflectorUKWB, plugboard)
-
 	message := "secret message"
-	message = strings.ToUpper(message)
-
 	encodedMessage := enigma.EncodeMessage(message)
-
 	fmt.Println(encodedMessage)
 }

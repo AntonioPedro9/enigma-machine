@@ -17,6 +17,8 @@ func NewEnigma(rotors []*Rotor, reflector *Reflector, plugboard *Plugboard) *Eni
 }
 
 func (e *Enigma) EncodeMessage(message string) string {
+	message = strings.ToUpper(message)
+	
 	rotor1 := e.Rotors[0]
 	rotor2 := e.Rotors[1]
 	rotor3 := e.Rotors[2]

@@ -15,8 +15,8 @@ $ go run ./cmd/main.go
 1. Vídeo de demostração do funcionamento da máquina.<br>
    https://youtu.be/ybkkiGtJmkM
 
-3. Informações sobre o mapeamento dos rotores e refletores.<br>
+2. Informações sobre o mapeamento dos rotores e refletores.<br>
    https://piotte13.github.io/enigma-cipher
 
-4. Validação dos outputs do programa.<br>
+3. Validação dos outputs do programa.<br>
    https://cryptii.com/pipes/enigma-machine
