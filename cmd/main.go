@@ -18,7 +18,12 @@ var (
 )
 
 func main() {
-	enigma := entities.NewEnigma([]*entities.Rotor{rotorI, rotorII, rotorIII}, reflectorUKWB, plugboard)
+	enigma := entities.NewEnigma(
+		[]*entities.Rotor{rotorI, rotorII, rotorIII},
+		reflectorUKWB,
+		plugboard,
+	)
+	
 	message := "secret message"
 	encodedMessage := enigma.EncodeMessage(message)
 	fmt.Println(encodedMessage)
