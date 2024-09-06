@@ -18,14 +18,13 @@ func NewEnigma(rotors []*Rotor, reflector *Reflector, plugboard *Plugboard) *Eni
 
 func (e *Enigma) EncodeMessage(message string) string {
 	message = strings.ToUpper(message)
-	
+	var encodedMessage strings.Builder
+
 	rotor1 := e.Rotors[0]
 	rotor2 := e.Rotors[1]
 	rotor3 := e.Rotors[2]
 	reflector := e.Reflector
 	plugboard := e.Plugboard
-
-	var encodedMessage strings.Builder
 
 	for _, char := range message {
 		if char < 'A' || char > 'Z' {
@@ -37,11 +36,9 @@ func (e *Enigma) EncodeMessage(message string) string {
 			rotor2.Rotate()
 			rotor3.Rotate()
 		}
-		
 		if rotor1.Position == rotor1.Notch {
 			rotor2.Rotate()
 		}
-	
 		rotor1.Rotate()
 	
 		char = plugboard.Swap(char)

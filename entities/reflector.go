@@ -8,7 +8,6 @@ type Reflector struct {
 
 func NewReflector(pairs string) *Reflector {
 	pairs = strings.ToUpper(pairs)
-	
     var mappingRunes [26]rune
 
     for i := 0; i < 26; i++ {

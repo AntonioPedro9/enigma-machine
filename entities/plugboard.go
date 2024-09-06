@@ -8,7 +8,6 @@ type Plugboard struct {
 
 func NewPlugboard(pairs string) *Plugboard {
 	pairs = strings.ToUpper(pairs)
-	
     var mappingRunes [26]rune
 
     for i := 0; i < 26; i++ {

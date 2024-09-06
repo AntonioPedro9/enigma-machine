@@ -11,7 +11,6 @@ type Rotor struct {
 
 func NewRotor(mapping string, position, notch, ring rune) *Rotor {
 	mapping = strings.ToUpper(mapping)
-
 	var mappingRunes [26]rune
 	copy(mappingRunes[:], []rune(mapping))
 
