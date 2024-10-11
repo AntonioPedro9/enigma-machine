@@ -1,22 +1,22 @@
-## História
+## History
 
-A Enigma era uma máquina de cifra eletromecânica desenvolvida pelo engenheiro alemão [Arthur Scherbius](https://en.wikipedia.org/wiki/Arthur_Scherbius) no final da Primeira Guerra Mundial. Era usada na criptografia de mensagens sigilosas comerciais e militares por diversos países. Ficou bastante conhecida por ter sido utilizada pelos alemães durante a Segunda Guerra Mundial, o que inspirou o filme [O Jogo da Imitação](https://www.adorocinema.com/filmes/filme-198371/). O filme conta uma parte da vida do gênio [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing), que desenvolveu uma máquina capaz de quebrar as cifras da Enigma. Estima-se que essa invenção tenha reduzido a duração da guerra em 2 anos e salvo cerca de 14 milhões de vidas.
+The Enigma was an electromechanical cipher machine developed by the German engineer Arthur Scherbius at the end of World War I. It was used for encrypting confidential commercial and military messages by various countries. It became widely known for its use by the Germans during World War II, which inspired the movie The Imitation Game. The film depicts part of the life of the genius Alan Turing, who developed a machine capable of breaking Enigma's ciphers. It is estimated that this invention shortened the war by two years and saved about 14 million lives.
 
-## Executando o programa
+## Running the Program
 
-Sobrescreva a variável `message` no arquivo `/cmd/main.go` com a mensagem que deseja encriptar, em seguida abra a pasta do projeto no terminal e execute o comando:
+Override the message variable in the /cmd/main.go file with the message you want to encrypt, then open the project folder in the terminal and run the command:
 
 ```
 $ go run ./cmd/main.go
 ```
 
-## Referências
+## References
 
-1. Vídeo de demostração do funcionamento da máquina.<br>
+1. Demonstration video of the Enigma machine's operation.<br>
    https://youtu.be/ybkkiGtJmkM
 
-2. Informações sobre o mapeamento dos rotores e refletores.<br>
+2. Information on rotor and reflector mappings.<br>
    https://piotte13.github.io/enigma-cipher
 
-3. Validação dos outputs do programa.<br>
+3. Validation of program outputs.<br>
    https://cryptii.com/pipes/enigma-machine
