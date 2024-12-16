@@ -4,7 +4,7 @@ The Enigma was an electromechanical cipher machine developed by the German engin
 
 ## Running the Program
 
-Override the message variable in the /cmd/main.go file with the message you want to encrypt, then open the project folder in the terminal and run the command:
+Override the `message` variable in the `/cmd/main.go` file with the message you want to encrypt, then open the project folder in the terminal and run the command:
 
 ```
 $ go run ./cmd/main.go
